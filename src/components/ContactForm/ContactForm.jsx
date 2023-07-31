@@ -35,7 +35,7 @@ class ContactForm extends Component {
             type="text"
             name="name"
             value={name}
-            pattern="^[a-zA-Zа-яА-Я]/\+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             required
             onChange={inputChangeHandle}
             placeholder="Jack Sparrow"
@@ -49,7 +49,7 @@ class ContactForm extends Component {
             type="tel"
             name="number"
             value={number}
-            pattern="^[a-zA-Zа-яА-Я]/\+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             required
             onChange={inputChangeHandle}
             placeholder="+380 000 000 000"
