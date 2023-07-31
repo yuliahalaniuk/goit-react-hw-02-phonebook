@@ -11,7 +11,6 @@ class ContactForm extends Component {
 
   inputChangeHandle = e => {
     const { value, name } = e.target;
-
     this.setState({
       [name]: value,
     });
@@ -19,9 +18,7 @@ class ContactForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-
     this.props.onSubmit(this.state);
-
     this.setState({ name: '', number: '' });
   };
 
